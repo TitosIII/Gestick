@@ -3,17 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-<<<<<<< HEAD
-<<<<<<< HEAD
   "type": "module",
   "scripts": {
-    "start": "nodemon run",
-=======
-  "scripts": {
->>>>>>> 809d1aa66283018026fb6d050ca3f48ebe1d5dc1
-=======
-  "scripts": {
->>>>>>> 809d1aa66283018026fb6d050ca3f48ebe1d5dc1
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -21,21 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.1",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "ejs": "^3.1.8",
-    "express": "^4.18.2",
-    "install": "^0.13.0",
-    "mysql2": "^2.3.3",
-    "nodemon": "^2.0.20",
-=======
     "express": "^4.18.2",
     "mysql2": "^2.3.3",
->>>>>>> 809d1aa66283018026fb6d050ca3f48ebe1d5dc1
-=======
-    "express": "^4.18.2",
-    "mysql2": "^2.3.3",
->>>>>>> 809d1aa66283018026fb6d050ca3f48ebe1d5dc1
     "parse-database-url": "^0.3.0"
   }
 }
