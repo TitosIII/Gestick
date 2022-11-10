@@ -1,5 +1,7 @@
-import createPool from mysql2
-import dbConfig from "./deployConfig.js"
+import {createPool} from "mysql2"
+import {dbConfig} from "./deployConfig.js"
 
-dataBase = createPool(dbConfig)
+var dataBase = createPool(dbConfig);
+
+export const db = dataBase;
 
