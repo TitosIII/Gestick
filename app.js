@@ -10,7 +10,7 @@ const app = express();
 app.set("view engine", "ejs");
 app.use(session({
     secret: "thisismykey",
-    saveUninitialized:false,
+    saveUninitialized:true,
     resave:false
 }));
 app.use(cookieParser());
