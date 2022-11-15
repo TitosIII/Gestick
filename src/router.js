@@ -1,10 +1,14 @@
 import express from "express";
+import session from "express-session";
 const {pathname: root} = new URL('..', import.meta.url)
 import {db} from "./db.js"
+
+let sesion;
 
 const rout = express.Router();
 
 rout.get("/", (req,res)=>{
+    sesion = req.session;
     res.sendFile("/public/index.html",{root:"."})
 });
 
@@ -29,24 +33,48 @@ rout.get("/logSucced", (req,res)=>{
 });
 
 rout.get("/SignAdmin", (req,res)=>{
-    res.send("Necesito los html")
+    res.send("Necesito los html");
 });
 
-rout.post("/logEmpleado",(req,res)=>{
-    var user = req.body.user;
-    console.log(user)
-    db.query(`select * from empleado where nombre = "${user}" ;`,(results,error)=>{
+rout.post("/logEmpleado",function(req,res,next){
+    console.log(req.body.user)
+    db.query(`select * from empleado where nombre = "${req.body.user}" ;`,(error,results)=>{
+        console.log(error)
+        if (error){
+            res.redirect("/logEmp");
+        }else{
+            console.log(req.body.password)
+            results.forEach((row)=>{
+                console.log(row)
+                if(req.body.password == row.Contraseña){
+                    return next();
+                }
+                res.redirect("/logEmp");
+                next();
+            })
+        }
+    });
+});
+
+rout.post("/logAdministrador",(req,res, next)=>{
+    db.query(`select * from administrador where nombre = "${req.body.user}" ;`,(error,results)=>{
         console.log(results)
         if (error){
             console.log(error);
+            res.redirect("/logAdmin");
         }else{
-            if(req.body.password == results.contraseña){
-                res.send(`${user}`);
-            }else{
-                res.redirect("/logEmp")
-            }
+            console.log(req.body.password)
+            results.forEach((row)=>{
+                console.log(row);
+                if(req.body.password == row.Contraseña){
+                    res.redirect("/");
+                    return next();
+                }
+                res.redirect("/logAdmin");
+                next();
+            });
         }
-    })
+    });
 });
 
 rout.get("/addProduct",(req,res)=>{
@@ -60,5 +88,7 @@ rout.get("/modifyProduct",(req,res)=>{
 rout.get("/deleteProduct",(req,res)=>{
 
 });
+
+
 
 export const Rout = rout;
