@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="HTML/CSS/IMG/Logo_Pequeño.png">
+    <link rel="stylesheet" href="HTML/CSS/Style.css">
+    <link href='https://css.gg/math-plus.css' rel='stylesheet'>
+    <link href='https://css.gg/math-minus.css' rel='stylesheet'>
+    <link href='https://css.gg/shopping-cart.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/8042365e74.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <title>Gestick</title>
+</head>
+
+<body>
+    <header>
+        <img src="HTML/CSS/IMG/Logo_Pequeño_2.png" alt="GESTICK">
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+
+            <!--            <i class="fa-solid fa-magnifying-glass"></i>
+-->
+
+            <div class="headercontainer">
+
+
+                <div class="userss">
+                    <a href="Empleado_Config.html"><i class="fa-solid fa-circle-user">
+                        </i></a>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--            <a href="#"><i class="fa-solid fa-cart-shopping"> <h3 class="titulos"> Carrito</h3></i></a>
+-->
+            <!--            <a href="#"><i class="fa-solid fa-gear"></i> <h3 class="titulos"> Configuración</h3></a>
+-->
+
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+
+
+<div class="carrusel">
+
+    <div class="carrusel-items">
+        <div class="carrousel">
+            <div class="grande">
+                <img src="HTML/CSS/IMG/Great2.0.png" alt="RC-DUDE-MX-ENVIOS" class="img">
+                <img src="HTML/CSS/IMG/Trans2.0.png" alt="Imagen 2" class="img">
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+    <div class="sell">
+
+        <input type="checkbox" id="btn-modal">
+
+        <label for="btn-modal" class="lbl-modal">
+                <p id="vend">VENDER</p>
+            </label>
+
+        <div class="modal">
+            <div class="contenedor">
+                <header>SE AMABLE CON EL CLIENTE :D</header>
+                <label for="btn-modal">X</label>
+                <div class="contenido">
+                    <h3> COBRA ESTA CANTIDAD:</h3>
+                    <p> 58 VARITOS </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <h2 id="Titulo-1">PRODUCTOS</h2>
+    <h3 id="Titulo-2">Selecciona el producto a vender</h3>
+
+    <center>
+ 
+        <main class="cardscontainer">
+
+
+
+
+
+
+            <div class="espaciado">
+            </div>
+
+            <a class="card">
+
+                <div class="cont-tarjeta__logo">
+
+                    <img src="HTML/CSS/IMG/ARTICULOS/Colores_PrismaColor.jpg" class="articuloIMG" alt="Articulo">
+
+                </div>
+
+                <center>
+                    <p><span id="Nombre">Colores Prismacolor</span></p>
+                    <p><span id="PrecioDemanda">$450MX</span></p>
+                </center>
+                <p id="cantidad">0</p>
+
+                <div class="plus" onclick="cantidadproductos()">
+                    <i class="gg-math-plus" id="plus" ></i>
+                </div>
+
+                <div class="less" onclick="cantidadproductosdos()">
+                    <i class="gg-math-minus" id="less"></i>
+                </div>
+
+            </a>
+
+
+            <a class="card" <div class="cont-tarjeta__logo">
+
+                <img src="HTML/CSS/IMG/ARTICULOS/Prit.jpg" class="articuloIMG" alt="Articulo">
+
+                </div>
+
+                <center>
+                    <p><span id="Nombre">Pritt</span></p>
+                    <p><span id="PrecioDemanda">$70MX</span></p>
+                </center>
+                <p id="cantidad">5</p>
+
+                <div class="plus">
+                    <i class="gg-math-plus" id="plus"></i>
+                </div>
+
+                <div class="less">
+                    <i class="gg-math-minus" id="less"></i>
+                </div>
+            </a>
+
+
+            <a class="card" <div class="cont-tarjeta__logo">
+
+                <img src="HTML/CSS/IMG/ARTICULOS/Goma_Pelican.jpg" class="articuloIMG" alt="Articulo">
+
+                </div>
+
+                <center>
+                    <p><span id="Nombre">Goma Pelican</span></p>
+                    <p><span id="PrecioDemanda">$17MX</span></p>
+                </center>
+                <p id="cantidad">5</p>
+
+                <div class="plus">
+                    <i class="gg-math-plus" id="plus"></i>
+                </div>
+
+                <div class="less">
+                    <i class="gg-math-minus" id="less"></i>
+                </div>
+            </a>
+
+
+            <a class="card" <div class="cont-tarjeta__logo">
+
+                <img src="HTML/CSS/IMG/ARTICULOS/Cuaderno_Estrella.jpg" class="articuloIMG" alt="Articulo">
+
+                </div>
+
+                <center>
+                    <p><span id="Nombre">Pritt</span></p>
+                    <p><span id="PrecioDemanda">$70MX</span></p>
+                </center>
+                <p id="cantidad">5</p>
+
+                <div class="plus">
+                    <i class="gg-math-plus" id="plus"></i>
+                </div>
+
+                <div class="less">
+                    <i class="gg-math-minus" id="less"></i>
+                </div>
+            </a>
+
+
+            <a class="card" <div class="cont-tarjeta__logo">
+
+                <img src="HTML/CSS/IMG/ARTICULOS/Plumas_Bic.jpg" class="articuloIMG" alt="Articulo">
+
+                </div>
+
+                <center>
+                    <p><span id="Nombre">Pritt</span></p>
+                    <p><span id="PrecioDemanda">$70MX</span></p>
+                </center>
+                <p id="cantidad">5</p>
+
+                <div class="plus">
+                    <i class="gg-math-plus" id="plus"></i>
+                </div>
+
+                <div class="less">
+                    <i class="gg-math-minus" id="less"></i>
+                </div>
+            </a>
+
+
+            <a class="card" <div class="cont-tarjeta__logo">
+
+                <img src="HTML/CSS/IMG/ARTICULOS/Tijeras_Oficina.jpg" class="articuloIMG" alt="Articulo">
+
+                </div>
+
+                <center>
+                    <p><span id="Nombre">Pritt</span></p>
+                    <p><span id="PrecioDemanda">$70MX</span></p>
+                </center>
+                <p id="cantidad">5</p>
+
+                <div class="plus">
+                    <i class="gg-math-plus" id="plus"></i>
+                </div>
+
+                <div class="less">
+                    <i class="gg-math-minus" id="less"></i>
+                </div>
+            </a>
+
+
+            <a class="card" <div class="cont-tarjeta__logo">
+
+                <img src="HTML/CSS/IMG/ARTICULOS/Lapices_Pelikan.jpg" class="articuloIMG" alt="Articulo">
+
+                </div>
+
+                <center>
+                    <p><span id="Nombre">Pritt</span></p>
+                    <p><span id="PrecioDemanda">$70MX</span></p>
+                </center>
+                <p id="cantidad">5</p>
+
+                <div class="plus">
+                    <i class="gg-math-plus" id="plus"></i>
+                </div>
+
+                <div class="less">
+                    <i class="gg-math-minus" id="less"></i>
+                </div>
+            </a>
+
+
+            <a class="card" href="https://www.mercadolibre.com.mx/#from=homecom">
+
+                <div class="cont-tarjeta__logo">
+
+                    <img src="HTML/CSS/IMG/ARTICULOS/Bolsa_Regalo_Blanca.jpg" class="articuloIMG" alt="Articulo">
+
+                </div>
+
+                <center>
+                    <p><span id="Nombre">Pritt</span></p>
+                    <p><span id="PrecioDemanda">$70MX</span></p>
+                </center>
+                <p id="cantidad">5</p>
+
+                <div class="plus">
+                    <i class="gg-math-plus" id="plus"></i>
+                </div>
+
+                <div class="less">
+                    <i class="gg-math-minus" id="less"></i>
+                </div>
+            </a>
+
+        </main>
+    </center>
+
+    <script src="HTML/JS/Script.js"></script>
+    <script src="HTML/JS/Search.js"></script>
+    <script src="HTML/JS/main.js"></script>
+
+</body>
+
+</html>
